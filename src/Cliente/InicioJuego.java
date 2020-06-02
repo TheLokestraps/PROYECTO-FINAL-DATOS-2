@@ -16,6 +16,10 @@ public class InicioJuego extends javax.swing.JFrame {
      */
     public InicioJuego() {
         initComponents();
+        this.setLocationRelativeTo(null);
+        this.setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
+        this.setResizable(false);
+        this.setTitle("Lobby");
     }
 
     /**
@@ -87,7 +91,8 @@ public class InicioJuego extends javax.swing.JFrame {
     }//GEN-LAST:event_crearSalaActionPerformed
 
     private void RegisterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RegisterActionPerformed
-        // TODO add your handling code here:
+        Registrarse r=new Registrarse();
+        r.setVisible(true);
     }//GEN-LAST:event_RegisterActionPerformed
 
     /**
